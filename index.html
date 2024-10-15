@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h3>1/ Check if a string starts with an uppercase letter.</h3>
+  <input class="uppercaseInput" type="text">
+  <span style="color:red" class="uppercaseSpan" hidden>text must start with an uppercase letter</span>
+  
+  <h3>2/ Test if a string is a valid date in DD/MM/YYYY format</h3>
+  <input class="dateInput" type="text">
+  <span style="color:red" class="dateSpan" hidden>text must be valid date in DD/MM/YYYY format</span>
+  
+  <h3>3/ Validate a GE phone number in the format 598-12-34-56</h3>
+  <input class="gePhoneInput" type="text">
+  <span style="color:red" class="gePhoneSpan" hidden>text must be 598-12-34-56 format</span>
+  
+  <h3>4/ Validate the emails that ends with @example.com</h3>
+  <input class="emailInput" type="text">
+  <span style="color:red" class="emailSpan" hidden>email should end with @example.com </span>
+
+  <br>
+  <br>
+  <hr>
+
+  <h3>5/ Today's Horoscope:</h3>
+  <p id="horoscope"></p>
+
+  <br>
+  <hr>
+
+  <form id="form">
+    <h3>6/ Make a form with three inputs name, email and phone</h3>
+    <input id="nameForm" oninput="saveToLclstrg(this)" placeholder="enter name" type="text">
+    <input id="emailForm" oninput="saveToLclstrg(this)" placeholder="enter email" type="email">
+    <input id="phoneForm" oninput="saveToLclstrg(this)" placeholder="enter phone" type="number">
+
+  </form>
+
+  <br>
+  <hr>
+
+  <h3>7/ Create a two button En Ka and the random text below, if you </h3>
+
+  <button onclick="changeLanguage(this)" id="enBtn">EN</button>
+  <button onclick="changeLanguage(this)" id="kaBtn">KA</button>
+
+  <h2 id="textToTranslate"></h2>
+  
+  <br>
+  <br>  
+  <script src="main.js"></script>
+</body>
+</html>
